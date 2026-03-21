@@ -461,6 +461,41 @@ export default function Home() {
           </div>
         </section>
 
+        {/* SYSTEM REQUIREMENTS */}
+        <section className="section" style={{paddingTop:'0'}}>
+          <div className="section-label">System Requirements</div>
+          <h2 className="section-title">Make sure your computer is ready.</h2>
+          <div style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:'20px',maxWidth:'800px',margin:'0 auto'}}>
+            <div className="feature-card">
+              <span className="feature-icon">🍎</span>
+              <h3>Mac Requirements</h3>
+              <p style={{lineHeight:'2'}}>
+                ✅ macOS 12 Monterey or newer<br/>
+                ✅ Apple Silicon (M1/M2/M3/M4) or Intel<br/>
+                ✅ 8GB RAM minimum (16GB+ recommended)<br/>
+                ✅ 5GB free storage<br/>
+                ✅ Internet connection<br/>
+                <span style={{color:'#a855f7',fontWeight:'600'}}>⭐ Mac Mini M4 recommended</span>
+              </p>
+            </div>
+            <div className="feature-card">
+              <span className="feature-icon">🪟</span>
+              <h3>Windows Requirements</h3>
+              <p style={{lineHeight:'2'}}>
+                ✅ Windows 10 or 11 (64-bit)<br/>
+                ✅ Intel or AMD processor<br/>
+                ✅ 8GB RAM minimum (16GB+ recommended)<br/>
+                ✅ 5GB free storage<br/>
+                ✅ Internet connection<br/>
+                <span style={{color:'#6366f1',fontWeight:'600'}}>⭐ Windows 11 recommended</span>
+              </p>
+            </div>
+          </div>
+          <p style={{textAlign:'center',color:'#444',fontSize:'13px',marginTop:'24px'}}>
+            Not sure if your computer qualifies? Email us at <a href="mailto:aigo.mediapro@gmail.com" style={{color:'#a855f7'}}>aigo.mediapro@gmail.com</a>
+          </p>
+        </section>
+
         {/* OPENCLAW STRIP */}
         <div className="openclaw-strip">
           <h2>🦞 Powered by OpenClaw AI</h2>
