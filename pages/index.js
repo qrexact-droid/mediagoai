@@ -2,10 +2,62 @@ export default function Home() {
   return (
     <>
       <head>
+        {/* ═══ SEO METADATA ═══ */}
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>MediaGoAI — Your AI Business Team</title>
-        <meta name="description" content="One setup. Your AI runs your social media, builds your website, and grows your business 24/7. Powered by OpenClaw." />
+        
+        {/* Primary */}
+        <title>MediaGoAI — The Easiest Way to Install OpenClaw AI for Your Business</title>
+        <meta name="description" content="OpenClaw AI is the most powerful AI business platform available — but it's hard to install. MediaGoAI makes it dead simple. One click, fully set up, pre-loaded with social media automation, website builder, and more. No tech skills needed." />
+        <meta name="keywords" content="OpenClaw AI, OpenClaw install, AI business assistant, AI automation, social media automation, OpenClaw setup, MediaGoAI, AI for small business, easy AI install, OpenClaw for beginners, automated social media, content automation, AI website builder" />
+        <meta name="author" content="MediaGoAI" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://mediagoai.com" />
+
+        {/* Open Graph (Facebook, LinkedIn) */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://mediagoai.com" />
+        <meta property="og:title" content="MediaGoAI — OpenClaw AI, Easy Install for Anyone" />
+        <meta property="og:description" content="OpenClaw AI is powerful but complex to set up. We fixed that. One click installs OpenClaw with social media automation, website builder, and content tools — all pre-configured for your business." />
+        <meta property="og:image" content="https://mediagoai.com/banner.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="400" />
+        <meta property="og:site_name" content="MediaGoAI" />
+
+        {/* Twitter/X Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@aigomedia" />
+        <meta name="twitter:creator" content="@aigomedia" />
+        <meta name="twitter:title" content="MediaGoAI — OpenClaw AI Made Simple" />
+        <meta name="twitter:description" content="We made OpenClaw AI easy to install for anyone. One click — social media automation, website builder, and content tools all pre-loaded. No tech skills needed." />
+        <meta name="twitter:image" content="https://mediagoai.com/banner.png" />
+
+        {/* Favicon */}
+        <link rel="icon" type="image/png" href="/favicon.png" />
+        <link rel="apple-touch-icon" href="/logo.png" />
+
+        {/* Schema.org structured data */}
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "SoftwareApplication",
+          "name": "MediaGoAI",
+          "applicationCategory": "BusinessApplication",
+          "operatingSystem": "macOS, Windows",
+          "description": "The easiest way to install and run OpenClaw AI for your business. Pre-configured with social media automation, website builder, content pipeline, and digital product tools.",
+          "offers": {
+            "@type": "Offer",
+            "price": "297",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock"
+          },
+          "brand": {
+            "@type": "Brand",
+            "name": "MediaGoAI"
+          },
+          "url": "https://mediagoai.com",
+          "sameAs": ["https://tiktok.com/@aigomedia", "https://youtube.com/@aigomedia"]
+        })}</script>
+
         <style>{`
           @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
           * { margin:0; padding:0; box-sizing:border-box; }
@@ -16,8 +68,6 @@ export default function Home() {
             color: #fff;
             overflow-x: hidden;
           }
-
-          /* NAV */
           nav {
             display: flex;
             align-items: center;
@@ -38,17 +88,8 @@ export default function Home() {
             font-weight: 800;
             letter-spacing: -0.5px;
           }
-          .nav-logo .icon {
-            width: 36px;
-            height: 36px;
-            border-radius: 10px;
-            overflow: hidden;
-          }
-          .nav-logo .icon img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-          }
+          .nav-logo .icon { width: 36px; height: 36px; border-radius: 10px; overflow: hidden; }
+          .nav-logo .icon img { width: 100%; height: 100%; object-fit: cover; }
           .nav-cta {
             background: linear-gradient(135deg, #7c3aed, #6366f1);
             color: white;
@@ -60,8 +101,6 @@ export default function Home() {
             cursor: pointer;
             text-decoration: none;
           }
-
-          /* HERO */
           .hero {
             text-align: center;
             padding: 100px 20px 80px;
@@ -72,8 +111,7 @@ export default function Home() {
             position: absolute;
             top: 0; left: 50%;
             transform: translateX(-50%);
-            width: 800px;
-            height: 400px;
+            width: 800px; height: 400px;
             background: radial-gradient(ellipse, rgba(124,58,237,0.15) 0%, transparent 70%);
             pointer-events: none;
           }
@@ -96,12 +134,9 @@ export default function Home() {
             border-radius: 50%;
             animation: pulse 2s infinite;
           }
-          @keyframes pulse {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.3; }
-          }
+          @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.3} }
           .hero h1 {
-            font-size: clamp(40px, 7vw, 76px);
+            font-size: clamp(36px, 6vw, 70px);
             font-weight: 900;
             line-height: 1.05;
             letter-spacing: -2px;
@@ -110,7 +145,7 @@ export default function Home() {
             margin-left: auto;
             margin-right: auto;
           }
-          .hero h1 .gradient {
+          .gradient {
             background: linear-gradient(135deg, #a855f7, #6366f1, #22d3ee);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -118,16 +153,11 @@ export default function Home() {
           .hero p {
             font-size: clamp(16px, 2vw, 20px);
             color: #666;
-            max-width: 560px;
+            max-width: 600px;
             margin: 0 auto 48px;
             line-height: 1.7;
           }
-          .hero-cta {
-            display: inline-flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 12px;
-          }
+          .hero p strong { color: #a855f7; }
           .btn-primary {
             background: linear-gradient(135deg, #7c3aed, #6366f1);
             color: white;
@@ -142,28 +172,23 @@ export default function Home() {
             transition: all 0.2s;
             box-shadow: 0 0 40px rgba(124,58,237,0.3);
           }
-          .btn-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 0 60px rgba(124,58,237,0.5);
-          }
-          .price-note {
-            font-size: 14px;
-            color: #444;
-          }
+          .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 0 60px rgba(124,58,237,0.5); }
+          .price-note { font-size: 14px; color: #444; margin-top: 12px; }
           .price-note strong { color: #888; }
-
-          /* POWERED BY */
-          .powered {
-            text-align: center;
-            padding: 16px;
-            color: #333;
-            font-size: 13px;
-            letter-spacing: 1px;
-            text-transform: uppercase;
+          .openclaw-hero {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 12px;
+            padding: 12px 20px;
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 32px;
           }
-          .powered span { color: #555; }
-
-          /* FEATURES */
+          .openclaw-hero .claw { font-size: 20px; }
+          .openclaw-hero strong { color: #a855f7; }
           .section {
             max-width: 1100px;
             margin: 0 auto;
@@ -185,6 +210,28 @@ export default function Home() {
             margin-bottom: 60px;
             line-height: 1.2;
           }
+          .problem-box {
+            background: rgba(255,59,48,0.05);
+            border: 1px solid rgba(255,59,48,0.15);
+            border-radius: 16px;
+            padding: 32px;
+            max-width: 700px;
+            margin: 0 auto 60px;
+            text-align: center;
+          }
+          .problem-box h3 { font-size: 20px; font-weight: 700; margin-bottom: 12px; color: #ff6b6b; }
+          .problem-box p { font-size: 15px; color: #555; line-height: 1.7; }
+          .solution-box {
+            background: rgba(124,58,237,0.05);
+            border: 1px solid rgba(124,58,237,0.2);
+            border-radius: 16px;
+            padding: 32px;
+            max-width: 700px;
+            margin: 0 auto 60px;
+            text-align: center;
+          }
+          .solution-box h3 { font-size: 20px; font-weight: 700; margin-bottom: 12px; color: #a855f7; }
+          .solution-box p { font-size: 15px; color: #555; line-height: 1.7; }
           .features-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -197,26 +244,10 @@ export default function Home() {
             padding: 32px;
             transition: border-color 0.2s;
           }
-          .feature-card:hover {
-            border-color: rgba(124,58,237,0.3);
-          }
-          .feature-icon {
-            font-size: 36px;
-            margin-bottom: 16px;
-            display: block;
-          }
-          .feature-card h3 {
-            font-size: 18px;
-            font-weight: 700;
-            margin-bottom: 10px;
-          }
-          .feature-card p {
-            font-size: 14px;
-            color: #555;
-            line-height: 1.7;
-          }
-
-          /* HOW IT WORKS */
+          .feature-card:hover { border-color: rgba(124,58,237,0.3); }
+          .feature-icon { font-size: 36px; margin-bottom: 16px; display: block; }
+          .feature-card h3 { font-size: 18px; font-weight: 700; margin-bottom: 10px; }
+          .feature-card p { font-size: 14px; color: #555; line-height: 1.7; }
           .steps {
             display: flex;
             flex-direction: column;
@@ -233,15 +264,13 @@ export default function Home() {
           .step:not(:last-child)::after {
             content: '';
             position: absolute;
-            left: 19px;
-            top: 48px;
+            left: 19px; top: 48px;
             width: 2px;
             height: calc(100% - 8px);
             background: rgba(124,58,237,0.2);
           }
           .step-num {
-            width: 40px;
-            height: 40px;
+            width: 40px; height: 40px;
             border-radius: 50%;
             background: rgba(124,58,237,0.15);
             border: 1px solid rgba(124,58,237,0.3);
@@ -253,21 +282,9 @@ export default function Home() {
             color: #a855f7;
             flex-shrink: 0;
           }
-          .step-content {
-            padding: 8px 0 48px;
-          }
-          .step-content h3 {
-            font-size: 17px;
-            font-weight: 700;
-            margin-bottom: 6px;
-          }
-          .step-content p {
-            font-size: 14px;
-            color: #555;
-            line-height: 1.6;
-          }
-
-          /* PRICING */
+          .step-content { padding: 8px 0 48px; }
+          .step-content h3 { font-size: 17px; font-weight: 700; margin-bottom: 6px; }
+          .step-content p { font-size: 14px; color: #555; line-height: 1.6; }
           .pricing-card {
             max-width: 480px;
             margin: 0 auto;
@@ -299,68 +316,21 @@ export default function Home() {
             text-transform: uppercase;
             letter-spacing: 1px;
           }
-          .price {
-            font-size: 72px;
-            font-weight: 900;
-            letter-spacing: -3px;
-            line-height: 1;
-            margin-bottom: 8px;
-          }
-          .price sup {
-            font-size: 32px;
-            vertical-align: top;
-            margin-top: 12px;
-            font-weight: 700;
-          }
-          .price-sub {
-            font-size: 14px;
-            color: #555;
-            margin-bottom: 36px;
-          }
-          .includes {
-            display: flex;
-            flex-direction: column;
-            gap: 14px;
-            margin-bottom: 40px;
-            text-align: left;
-          }
-          .include-item {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            font-size: 15px;
-            color: #aaa;
-          }
-          .include-item .check {
-            color: #22c55e;
-            font-size: 16px;
-            flex-shrink: 0;
-          }
-
-          /* OPENCLAW BADGE */
-          .openclaw-section {
+          .price { font-size: 72px; font-weight: 900; letter-spacing: -3px; line-height: 1; margin-bottom: 8px; }
+          .price sup { font-size: 32px; vertical-align: top; margin-top: 12px; font-weight: 700; }
+          .price-sub { font-size: 14px; color: #555; margin-bottom: 36px; }
+          .includes { display: flex; flex-direction: column; gap: 14px; margin-bottom: 40px; text-align: left; }
+          .include-item { display: flex; align-items: center; gap: 12px; font-size: 15px; color: #aaa; }
+          .include-item .check { color: #22c55e; font-size: 16px; flex-shrink: 0; }
+          .openclaw-strip {
             background: rgba(255,255,255,0.02);
-            border-top: 1px solid rgba(255,255,255,0.06);
-            border-bottom: 1px solid rgba(255,255,255,0.06);
-            padding: 60px 20px;
+            border-top: 1px solid rgba(255,255,255,0.05);
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+            padding: 48px 20px;
             text-align: center;
           }
-          .openclaw-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 14px;
-            background: rgba(255,255,255,0.04);
-            border: 1px solid rgba(255,255,255,0.1);
-            border-radius: 16px;
-            padding: 16px 28px;
-            margin-bottom: 20px;
-          }
-          .openclaw-badge .claw { font-size: 28px; }
-          .openclaw-badge .text { text-align: left; }
-          .openclaw-badge .text .top { font-size: 11px; color: #555; text-transform: uppercase; letter-spacing: 1px; }
-          .openclaw-badge .text .bottom { font-size: 16px; font-weight: 700; }
-
-          /* FOOTER */
+          .openclaw-strip h2 { font-size: 28px; font-weight: 800; margin-bottom: 12px; }
+          .openclaw-strip p { font-size: 15px; color: #555; max-width: 560px; margin: 0 auto; line-height: 1.7; }
           footer {
             text-align: center;
             padding: 40px 20px;
@@ -369,84 +339,88 @@ export default function Home() {
             border-top: 1px solid rgba(255,255,255,0.05);
           }
           footer a { color: #555; text-decoration: none; }
-
           @media (max-width: 600px) {
             nav { padding: 16px 20px; }
-            .hero { padding: 60px 20px 60px; }
+            .hero { padding: 60px 20px; }
             .pricing-card { padding: 32px 24px; }
           }
         `}</style>
       </head>
       <body>
 
-        {/* NAV */}
         <nav>
           <div className="nav-logo">
             <div className="icon"><img src="/logo.png" alt="MediaGoAI" /></div>
             <span>MediaGoAI</span>
           </div>
-          <a href="#pricing" className="nav-cta">Get Started →</a>
+          <a href="#pricing" className="nav-cta">Get Started — $297</a>
         </nav>
 
         {/* HERO */}
         <section className="hero">
-          <div className="badge">
-            <span className="dot"></span>
-            Powered by OpenClaw AI
+          <div className="openclaw-hero">
+            <span className="claw">🦞</span>
+            <span>The official easy-install solution for <strong>OpenClaw AI</strong></span>
           </div>
           <h1>
-            Your Business.<br/>
-            <span className="gradient">On Autopilot.</span>
+            <span className="gradient">OpenClaw AI</span><br/>
+            for Everyone.
           </h1>
           <p>
-            One setup. Your AI handles social media, builds your website,
-            and grows your business 24 hours a day — while you focus on what matters.
+            <strong>OpenClaw</strong> is the most powerful AI business platform available —
+            but installing it requires technical knowledge most people don't have.
+            MediaGoAI changes that. <strong>One click. Fully installed. Ready to work.</strong>
           </p>
-          <div className="hero-cta">
-            <a href="#pricing" className="btn-primary">Get MediaGoAI — $297</a>
-            <span className="price-note">One-time payment. <strong>No monthly fees.</strong></span>
+          <a href="#pricing" className="btn-primary">Get MediaGoAI — $297</a>
+          <div className="price-note">One-time payment. <strong>No monthly fees.</strong> Instant download.</div>
+        </section>
+
+        {/* PROBLEM / SOLUTION */}
+        <section className="section" style={{paddingTop: '20px', paddingBottom: '20px'}}>
+          <div className="problem-box">
+            <h3>😤 The Problem</h3>
+            <p>OpenClaw AI is incredibly powerful — but setting it up requires installing Node.js, Homebrew, Python, configuring APIs, setting up cron jobs... most people give up before they even start. The average business owner just can't do it.</p>
+          </div>
+          <div className="solution-box">
+            <h3>✅ The MediaGoAI Solution</h3>
+            <p>We built a one-click installer that sets up OpenClaw AI automatically — no terminal, no code, no confusion. Plus we pre-loaded it with 4 ready-to-run business programs so you're generating value from minute one.</p>
           </div>
         </section>
 
-        {/* POWERED BY OPENCLAW */}
-        <div className="powered">
-          <span>Built on</span> OpenClaw AI — the same technology powering thousands of AI businesses
-        </div>
-
-        {/* FEATURES */}
+        {/* WHAT YOU GET */}
         <section className="section">
-          <div className="section-label">What You Get</div>
-          <h2 className="section-title">Everything your business needs.<br/>Nothing you don't.</h2>
+          <div className="section-label">What's Included</div>
+          <h2 className="section-title">OpenClaw AI, fully installed<br/>+ 4 built-in business programs</h2>
           <div className="features-grid">
             <div className="feature-card">
-              <span className="feature-icon">📱</span>
-              <h3>Social Media on Autopilot</h3>
-              <p>Your AI posts daily to Twitter, TikTok, Facebook, Instagram, and YouTube — with captions written for each platform. Set it once, runs forever.</p>
+              <span className="feature-icon">🦞</span>
+              <h3>OpenClaw AI — Fully Installed</h3>
+              <p>We handle the entire OpenClaw setup: Node.js, dependencies, gateway configuration, and workspace. You get the full OpenClaw dashboard ready to use — no technical knowledge needed.</p>
             </div>
             <div className="feature-card">
-              <span className="feature-icon">🌐</span>
-              <h3>Professional Website</h3>
-              <p>A clean, fast website built and live for your business. No developer needed. Your AI handles it — you just answer a few questions.</p>
+              <span className="feature-icon">📱</span>
+              <h3>Social Media Autopilot</h3>
+              <p>Pre-configured to post daily to Twitter, TikTok, Facebook, Instagram, and YouTube. AI writes platform-specific captions. Runs automatically on a schedule.</p>
             </div>
             <div className="feature-card">
               <span className="feature-icon">🎮</span>
               <h3>Content Creator Pipeline</h3>
-              <p>Drop a video clip in a folder — your AI processes it, adds blur borders, and posts it to all platforms automatically. Every time.</p>
+              <p>Drop a video clip in a folder — OpenClaw processes it and posts to all platforms automatically. Built-in blur border effect, platform formatting, and smart captions.</p>
+            </div>
+            <div className="feature-card">
+              <span className="feature-icon">🌐</span>
+              <h3>Website Builder</h3>
+              <p>Tell your AI what kind of business you run — it builds and deploys a professional website. No code, no hosting setup, no designer needed.</p>
             </div>
             <div className="feature-card">
               <span className="feature-icon">📦</span>
-              <h3>Sell Products Online</h3>
-              <p>Launch a digital product with a sales page and Stripe payments. Your AI writes the copy, sets up checkout, and starts driving traffic.</p>
+              <h3>Digital Product Sales</h3>
+              <p>Launch a product with a sales page and Stripe checkout — all set up through your OpenClaw AI. Start selling digital guides, courses, or downloads immediately.</p>
             </div>
             <div className="feature-card">
               <span className="feature-icon">🌙</span>
-              <h3>Nightly Reports</h3>
-              <p>Wake up to a full report every morning — what posted, what's working, what needs attention. Your AI works while you sleep.</p>
-            </div>
-            <div className="feature-card">
-              <span className="feature-icon">🔐</span>
-              <h3>Your Data Stays Yours</h3>
-              <p>Everything runs on your own computer. No cloud subscription. No one else has access to your accounts or business data. Ever.</p>
+              <h3>Nightly Reports & Maintenance</h3>
+              <p>Every night OpenClaw checks your websites, backs up your workspace, and sends you a full status report. Wake up knowing everything is running.</p>
             </div>
           </div>
         </section>
@@ -454,85 +428,84 @@ export default function Home() {
         {/* HOW IT WORKS */}
         <section className="section" style={{paddingTop: '0'}}>
           <div className="section-label">Setup Process</div>
-          <h2 className="section-title">Up and running in under an hour.</h2>
+          <h2 className="section-title">From purchase to running<br/>in under one hour.</h2>
           <div className="steps">
             <div className="step">
               <div className="step-num">1</div>
               <div className="step-content">
-                <h3>Download & Install</h3>
-                <p>You receive a download link after purchase. Double-click one file — it installs everything automatically. No tech knowledge needed.</p>
+                <h3>Buy & Download</h3>
+                <p>After purchase you receive an email with your license key and a one-time download link. Click it — your installer downloads instantly.</p>
               </div>
             </div>
             <div className="step">
               <div className="step-num">2</div>
               <div className="step-content">
-                <h3>Tell Your AI About Your Business</h3>
-                <p>Your AI asks you a few questions in plain English — name, business type, what you want to set up first. That's it.</p>
+                <h3>Double-Click to Install</h3>
+                <p>One file. Double-click it. The installer automatically sets up OpenClaw AI, Node.js, Python, and all dependencies — no terminal, no commands, no confusion.</p>
               </div>
             </div>
             <div className="step">
               <div className="step-num">3</div>
               <div className="step-content">
-                <h3>Connect Your Accounts</h3>
-                <p>Log into your social media accounts when prompted. Your AI saves the sessions and handles everything from there.</p>
+                <h3>OpenClaw Opens & Greets You</h3>
+                <p>Your browser opens to the OpenClaw dashboard. Your AI asks what kind of business you run and walks you through connecting your accounts — in plain English.</p>
               </div>
             </div>
             <div className="step">
               <div className="step-num">4</div>
               <div className="step-content">
                 <h3>Your Business Runs Itself</h3>
-                <p>Social media posts daily. Website is live. Reports arrive every morning. You come back and add more services whenever you're ready.</p>
+                <p>Social media posts daily. Content goes out automatically. Reports arrive every morning. OpenClaw handles everything — you just run your business.</p>
               </div>
             </div>
           </div>
         </section>
 
-        {/* OPENCLAW */}
-        <div className="openclaw-section">
-          <div className="openclaw-badge">
-            <span className="claw">🦞</span>
-            <div className="text">
-              <div className="top">Powered by</div>
-              <div className="bottom">OpenClaw AI</div>
-            </div>
-          </div>
-          <p style={{color: '#555', fontSize: '14px', maxWidth: '480px', margin: '0 auto', lineHeight: '1.7'}}>
-            MediaGoAI is built on OpenClaw — a professional AI agent platform trusted by businesses worldwide.
-            Your AI runs locally on your machine, keeps your data private, and never stops working.
+        {/* OPENCLAW STRIP */}
+        <div className="openclaw-strip">
+          <h2>🦞 Powered by OpenClaw AI</h2>
+          <p>
+            OpenClaw is the professional AI agent platform built for real business automation.
+            MediaGoAI is the easiest way to get it running — pre-configured, pre-loaded,
+            and ready to work from minute one. No technical background required.
           </p>
         </div>
 
         {/* PRICING */}
         <section className="section" id="pricing">
           <div className="section-label">Pricing</div>
-          <h2 className="section-title">One price. Everything included.</h2>
+          <h2 className="section-title">Everything included.<br/>One price. Forever.</h2>
           <div className="pricing-card">
-            <div className="pricing-badge">Most Popular</div>
+            <div className="pricing-badge">⚡ OpenClaw AI — Easy Install</div>
             <div className="price"><sup>$</sup>297</div>
-            <div className="price-sub">One-time payment — no subscriptions, no hidden fees</div>
+            <div className="price-sub">One-time payment — no subscriptions ever</div>
             <div className="includes">
-              <div className="include-item"><span className="check">✅</span><span>Full AI Business Assistant setup</span></div>
+              <div className="include-item"><span className="check">✅</span><span>OpenClaw AI — fully installed & configured</span></div>
               <div className="include-item"><span className="check">✅</span><span>Social media automation (5 platforms)</span></div>
-              <div className="include-item"><span className="check">✅</span><span>Professional website built & live</span></div>
               <div className="include-item"><span className="check">✅</span><span>Content creator pipeline</span></div>
+              <div className="include-item"><span className="check">✅</span><span>Website builder</span></div>
               <div className="include-item"><span className="check">✅</span><span>Digital product sales setup</span></div>
               <div className="include-item"><span className="check">✅</span><span>Nightly reports & maintenance</span></div>
               <div className="include-item"><span className="check">✅</span><span>License key — yours forever</span></div>
               <div className="include-item"><span className="check">✅</span><span>Mac & Windows compatible</span></div>
             </div>
-            <a href="https://buy.stripe.com/8x2eVee605vHgk8a6icZa04" className="btn-primary" style={{width: '100%', textAlign: 'center'}}>
-              Buy Now — $297
+            <a href="https://buy.stripe.com/8x2eVee605vHgk8a6icZa04" className="btn-primary" style={{width:'100%',textAlign:'center',display:'block'}}>
+              Get OpenClaw Now — $297
             </a>
-            <p style={{fontSize: '13px', color: '#444', marginTop: '16px'}}>
-              Secure checkout via Stripe · Instant download after payment
+            <p style={{fontSize:'13px',color:'#444',marginTop:'16px'}}>
+              Secure checkout via Stripe · License key emailed instantly
             </p>
           </div>
         </section>
 
-        {/* FOOTER */}
         <footer>
-          <p style={{marginBottom: '8px'}}>© 2026 MediaGoAI — Powered by OpenClaw</p>
-          <p><a href="mailto:aigo.mediapro@gmail.com">aigo.mediapro@gmail.com</a></p>
+          <p style={{marginBottom:'8px'}}>© 2026 MediaGoAI — The Easy Way to Run OpenClaw AI</p>
+          <p style={{marginBottom:'8px'}}>
+            <a href="https://tiktok.com/@aigomedia">TikTok</a> ·{' '}
+            <a href="https://youtube.com/@aigomedia">YouTube</a> ·{' '}
+            <a href="mailto:aigo.mediapro@gmail.com">aigo.mediapro@gmail.com</a>
+          </p>
+          <p style={{color:'#2a2a2a'}}>OpenClaw AI · AI Business Automation · Social Media Automation · Content Creator Tools · AI Website Builder</p>
         </footer>
 
       </body>
