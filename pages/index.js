@@ -41,12 +41,13 @@ export default function Home() {
           .nav-logo .icon {
             width: 36px;
             height: 36px;
-            background: linear-gradient(135deg, #7c3aed, #6366f1);
             border-radius: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 18px;
+            overflow: hidden;
+          }
+          .nav-logo .icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
           }
           .nav-cta {
             background: linear-gradient(135deg, #7c3aed, #6366f1);
@@ -381,7 +382,7 @@ export default function Home() {
         {/* NAV */}
         <nav>
           <div className="nav-logo">
-            <div className="icon">🤖</div>
+            <div className="icon"><img src="/logo.png" alt="MediaGoAI" /></div>
             <span>MediaGoAI</span>
           </div>
           <a href="#pricing" className="nav-cta">Get Started →</a>
