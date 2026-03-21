@@ -39,18 +39,8 @@ export default async function handler(req, res) {
       return res.status(403).send(errorPage('Invalid download link.'))
     }
 
-    // Mark used via Vercel KV if available
-    if (process.env.KV_REST_API_URL) {
-      const { kv } = await import('@vercel/kv')
-      const alreadyUsed = await kv.get(`dl:${token}`)
-      if (alreadyUsed) {
-        return res.status(403).send(errorPage(
-          'This download link has already been used.',
-          'Each purchase includes one download. Email aigo.mediapro@gmail.com for help.'
-        ))
-      }
-      await kv.set(`dl:${token}`, '1', { ex: 7 * 24 * 3600 }) // expire record after 7 days
-    }
+    // One-time enforcement via Vercel KV (optional — enable by adding KV to project)
+    // For now, token expiry alone is the protection
 
   } catch (e) {
     return res.status(400).send(errorPage('Invalid download link.'))
