@@ -519,7 +519,7 @@ export default function Home() {
               <div className="include-item"><span className="check">✅</span><span>License key — yours forever</span></div>
               <div className="include-item"><span className="check">✅</span><span>Mac & Windows compatible</span></div>
             </div>
-            <a href="https://buy.stripe.com/PLACEHOLDER" className="btn-primary" style={{width: '100%', textAlign: 'center'}}>
+            <a href="https://buy.stripe.com/8x2eVee605vHgk8a6icZa04" className="btn-primary" style={{width: '100%', textAlign: 'center'}}>
               Buy Now — $297
             </a>
             <p style={{fontSize: '13px', color: '#444', marginTop: '16px'}}>
