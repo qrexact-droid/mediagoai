@@ -95,3 +95,4 @@ ${sub ? `<p style="color:#666;">${sub}</p>` : ''}
 <p style="color:#444;margin-top:32px;">Need help? <a href="mailto:aigo.mediapro@gmail.com" style="color:#a855f7;">aigo.mediapro@gmail.com</a></p>
 </body></html>`
 }
+// v1.1.6b - Sun Mar 22 04:14:27 PDT 2026
