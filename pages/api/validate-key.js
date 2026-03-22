@@ -20,7 +20,7 @@ export default async function handler(req, res) {
 
   // Valid keys database — updated by order processor on each purchase
   // DO NOT EDIT MANUALLY — auto-updated by scripts/mediagoai_orders.py
-  const KEYS_DB = {"AIGO-7485-4258-4A79":{"email":"mczeallionaire@gmail.com","name":"Ron Test","machineId":null,"product":"MediaGoAI"}}
+  const KEYS_DB = {"AIGO-7485-4258-4A79": {"email": "mczeallionaire@gmail.com", "name": "Ron Test", "machineId": null, "product": "MediaGoAI"}, "AIGO-8969-C667-66A8": {"email": "tester", "name": "Beta Tester", "machineId": null, "product": "MediaGoAI"}}}
 
   // Load valid keys — env var preferred, code fallback
   let validKeys = { ...KEYS_DB }
