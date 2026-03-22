@@ -534,16 +534,21 @@ export default function Home() {
               <div className="include-item"><span className="check">✅</span><span>License key — 1 computer, yours forever</span></div>
             </div>
 
-            {/* Mac buy button */}
-            <a href="https://buy.stripe.com/8x2eVee605vHgk8a6icZa04" className="btn-primary" style={{width:'100%',textAlign:'center',display:'block',marginBottom:'12px'}}>
-              🍎 Get Mac Version — $297
-            </a>
-            {/* Windows buy button */}
-            <a href="https://buy.stripe.com/dRm7sMaTObU50la4LYcZa06" style={{display:'block',width:'100%',textAlign:'center',padding:'16px',borderRadius:'14px',fontSize:'16px',fontWeight:'700',textDecoration:'none',background:'rgba(99,102,241,0.15)',border:'1px solid rgba(99,102,241,0.3)',color:'#6366f1',marginBottom:'16px'}}>
-              🪟 Get Windows Version — $297
-            </a>
+            {/* COMING SOON — buy buttons temporarily disabled */}
+            <div style={{background:'rgba(255,255,255,0.03)',border:'1px solid rgba(255,255,255,0.08)',borderRadius:'14px',padding:'24px',textAlign:'center',marginBottom:'16px'}}>
+              <div style={{fontSize:'28px',marginBottom:'12px'}}>🚀</div>
+              <div style={{fontSize:'18px',fontWeight:'700',marginBottom:'8px'}}>Launching Soon</div>
+              <div style={{fontSize:'14px',color:'#555',marginBottom:'16px',lineHeight:'1.6'}}>
+                We're putting the finishing touches on MediaGoAI.<br/>
+                Join the waitlist to be first in line and get a launch discount.
+              </div>
+              <a href="mailto:aigo.mediapro@gmail.com?subject=MediaGoAI Waitlist&body=I want to be notified when MediaGoAI launches!" 
+                 className="btn-primary" style={{display:'block',width:'100%',textAlign:'center'}}>
+                Join the Waitlist →
+              </a>
+            </div>
             <p style={{fontSize:'13px',color:'#444'}}>
-              Secure checkout via Stripe · License key &amp; download link emailed instantly · 1 license = 1 computer
+              Questions? <a href="mailto:aigo.mediapro@gmail.com" style={{color:'#a855f7'}}>aigo.mediapro@gmail.com</a>
             </p>
           </div>
         </section>
