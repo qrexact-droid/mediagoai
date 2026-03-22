@@ -522,16 +522,9 @@ export default function Home() {
             <div className="price-sub">One-time payment — no subscriptions ever</div>
 
             {/* Platform pills */}
-            <div style={{display:'flex',gap:'10px',justifyContent:'center',marginBottom:'28px'}}>
-              <div style={{background:'rgba(255,255,255,0.05)',border:'1px solid rgba(255,255,255,0.1)',borderRadius:'20px',padding:'6px 16px',fontSize:'13px',color:'#888'}}>
-                🍎 macOS (Mac Mini preferred)
-              </div>
-              <div style={{background:'rgba(255,255,255,0.05)',border:'1px solid rgba(255,255,255,0.1)',borderRadius:'20px',padding:'6px 16px',fontSize:'13px',color:'#888'}}>
-                🪟 Windows 10/11
-              </div>
-            </div>
+            <p style={{fontSize:'13px',color:'#555',marginBottom:'24px'}}>Choose your platform below. Each license is valid for <strong style={{color:'#aaa'}}>one computer</strong>. Need both? Purchase both.</p>
 
-            <div className="includes">
+            <div className="includes" style={{marginBottom:'32px'}}>
               <div className="include-item"><span className="check">✅</span><span>OpenClaw AI — fully installed & configured</span></div>
               <div className="include-item"><span className="check">✅</span><span>Social media automation (5 platforms)</span></div>
               <div className="include-item"><span className="check">✅</span><span>Content creator pipeline</span></div>
@@ -539,13 +532,18 @@ export default function Home() {
               <div className="include-item"><span className="check">✅</span><span>Digital product sales setup</span></div>
               <div className="include-item"><span className="check">✅</span><span>Nightly reports & maintenance</span></div>
               <div className="include-item"><span className="check">✅</span><span>License key — 1 computer, yours forever</span></div>
-              <div className="include-item"><span className="check">✅</span><span>Mac & Windows installer included</span></div>
             </div>
-            <a href="https://buy.stripe.com/8x2eVee605vHgk8a6icZa04" className="btn-primary" style={{width:'100%',textAlign:'center',display:'block'}}>
-              Get OpenClaw Now — $297
+
+            {/* Mac buy button */}
+            <a href="https://buy.stripe.com/8x2eVee605vHgk8a6icZa04" className="btn-primary" style={{width:'100%',textAlign:'center',display:'block',marginBottom:'12px'}}>
+              🍎 Get Mac Version — $297
             </a>
-            <p style={{fontSize:'13px',color:'#444',marginTop:'16px'}}>
-              Secure checkout via Stripe · Both Mac &amp; Windows installers emailed instantly
+            {/* Windows buy button */}
+            <a href="https://buy.stripe.com/dRm7sMaTObU50la4LYcZa06" style={{display:'block',width:'100%',textAlign:'center',padding:'16px',borderRadius:'14px',fontSize:'16px',fontWeight:'700',textDecoration:'none',background:'rgba(99,102,241,0.15)',border:'1px solid rgba(99,102,241,0.3)',color:'#6366f1',marginBottom:'16px'}}>
+              🪟 Get Windows Version — $297
+            </a>
+            <p style={{fontSize:'13px',color:'#444'}}>
+              Secure checkout via Stripe · License key &amp; download link emailed instantly · 1 license = 1 computer
             </p>
           </div>
         </section>
