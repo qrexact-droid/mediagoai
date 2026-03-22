@@ -18,14 +18,17 @@ export default async function handler(req, res) {
     return res.status(200).json({ valid: false, error: 'Invalid key format' })
   }
 
-  // Load valid keys from env var (JSON string)
-  let validKeys = {}
+  // Valid keys database — updated by order processor on each purchase
+  // DO NOT EDIT MANUALLY — auto-updated by scripts/mediagoai_orders.py
+  const KEYS_DB = {"AIGO-7485-4258-4A79":{"email":"mczeallionaire@gmail.com","name":"Ron Test","machineId":null,"product":"MediaGoAI"}}
+
+  // Load valid keys — env var preferred, code fallback
+  let validKeys = { ...KEYS_DB }
   try {
     const raw = process.env.VALID_KEYS || '{}'
-    validKeys = JSON.parse(raw)
-  } catch {
-    validKeys = {}
-  }
+    const envKeys = JSON.parse(raw)
+    validKeys = { ...validKeys, ...envKeys }
+  } catch {}
 
   const license = validKeys[cleanKey]
 
