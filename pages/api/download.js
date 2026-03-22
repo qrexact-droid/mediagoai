@@ -3,8 +3,8 @@ import crypto from 'crypto'
 const SECRET = process.env.DOWNLOAD_SECRET || 'aigo-media-2026'
 
 // Latest installer URLs
-const MAC_URL = 'https://github.com/qrexact-droid/mediagoai/releases/download/v1.0.0/AIGO_Media_Setup_Mac_v1.1.1.zip'
-const WIN_URL = 'https://github.com/qrexact-droid/mediagoai/releases/download/v1.0.0/AIGO_Media_Setup_Win_v1.1.1.zip'
+const MAC_URL = 'https://github.com/qrexact-droid/mediagoai/releases/download/v1.0.0/AIGO_Media_Setup_Mac_v1.1.2.zip'
+const WIN_URL = 'https://github.com/qrexact-droid/mediagoai/releases/download/v1.0.0/AIGO_Media_Setup_Win_v1.1.2.zip'
 const DEFAULT_URL = process.env.INSTALLER_FILE_URL || MAC_URL
 
 export default async function handler(req, res) {
