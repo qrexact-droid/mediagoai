@@ -570,21 +570,28 @@ export default function Home() {
               <div className="include-item"><span className="check">✅</span><span>License key — 1 computer, yours forever</span></div>
             </div>
 
-            {/* COMING SOON — buy buttons temporarily disabled */}
-            <div style={{background:'rgba(255,255,255,0.03)',border:'1px solid rgba(255,255,255,0.08)',borderRadius:'14px',padding:'24px',textAlign:'center',marginBottom:'16px'}}>
-              <div style={{fontSize:'28px',marginBottom:'12px'}}>🚀</div>
-              <div style={{fontSize:'18px',fontWeight:'700',marginBottom:'8px'}}>Launching Soon</div>
-              <div style={{fontSize:'14px',color:'#555',marginBottom:'16px',lineHeight:'1.6'}}>
-                We're putting the finishing touches on MediaGoAI.<br/>
-                Join the waitlist to be first in line and get a launch discount.
-              </div>
-              <a href="mailto:aigo.mediapro@gmail.com?subject=MediaGoAI Waitlist&body=I want to be notified when MediaGoAI launches!" 
-                 className="btn-primary" style={{display:'block',width:'100%',textAlign:'center'}}>
-                Join the Waitlist →
-              </a>
+            <p style={{fontSize:'13px',color:'#555',marginBottom:'24px'}}>Choose your platform. Each license is valid for <strong style={{color:'#aaa'}}>one computer</strong>.</p>
+
+            <div className="includes" style={{marginBottom:'32px'}}>
+              <div className="include-item"><span className="check">✅</span><span>OpenClaw AI — fully installed & configured</span></div>
+              <div className="include-item"><span className="check">✅</span><span>6 pre-configured AI agents in your sidebar</span></div>
+              <div className="include-item"><span className="check">✅</span><span>Social media automation (5 platforms)</span></div>
+              <div className="include-item"><span className="check">✅</span><span>Content creator pipeline</span></div>
+              <div className="include-item"><span className="check">✅</span><span>Website builder</span></div>
+              <div className="include-item"><span className="check">✅</span><span>Digital product sales setup</span></div>
+              <div className="include-item"><span className="check">✅</span><span>Nightly reports & maintenance</span></div>
+              <div className="include-item"><span className="check">✅</span><span>Desktop folders pre-configured</span></div>
+              <div className="include-item"><span className="check">✅</span><span>License key — 1 computer, yours forever</span></div>
             </div>
+
+            <a href="https://buy.stripe.com/8x2eVee605vHgk8a6icZa04" className="btn-primary" style={{width:'100%',textAlign:'center',display:'block',marginBottom:'12px'}}>
+              🍎 Get Mac Version — $297
+            </a>
+            <a href="https://buy.stripe.com/dRm7sMaTObU50la4LYcZa06" style={{display:'block',width:'100%',textAlign:'center',padding:'16px',borderRadius:'14px',fontSize:'16px',fontWeight:'700',textDecoration:'none',background:'rgba(99,102,241,0.15)',border:'1px solid rgba(99,102,241,0.3)',color:'#6366f1',marginBottom:'16px'}}>
+              🪟 Get Windows Version — $297
+            </a>
             <p style={{fontSize:'13px',color:'#444'}}>
-              Questions? <a href="mailto:aigo.mediapro@gmail.com" style={{color:'#a855f7'}}>aigo.mediapro@gmail.com</a>
+              Secure checkout via Stripe · License key &amp; download emailed instantly · 1 license = 1 computer
             </p>
           </div>
         </section>
