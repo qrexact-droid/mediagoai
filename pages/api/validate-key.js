@@ -17,8 +17,7 @@ export default function handler(req, res) {
   }
 
   // Valid keys database — updated on each purchase
-  const KEYS_DB = {
-    "AIGO-8969-C667-66A8": {"name":"Beta Tester","email":"tester","machineId":null,"product":"MediaGoAI"},
+  const KEYS_DB = {"AIGO-8969-C667-66A8": {"email": "tester", "name": "Beta Tester", "machineId": null, "product": "MediaGoAI"}, "AIGO-BEE0-D170-40FD": {"email": "tester-windows", "name": "Windows Beta Tester", "machineId": null, "product": "MediaGoAI Windows"}, "AIGO-41FF-2A7A-BAE7": {"email": "mczeallionaire@gmail.com", "name": "Ronald McZeal", "machineId": null, "product": "MediaGoAI"}},
     "AIGO-BEE0-D170-40FD": {"name":"Windows Beta Tester","email":"tester-windows","machineId":null,"product":"MediaGoAI Windows"}
   }
 
