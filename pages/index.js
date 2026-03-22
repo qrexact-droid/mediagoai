@@ -506,6 +506,42 @@ export default function Home() {
           </p>
         </div>
 
+        {/* WHAT YOU NEED BEFORE INSTALLING */}
+        <section className="section" style={{paddingTop:'0'}}>
+          <div className="section-label">Before You Install</div>
+          <h2 className="section-title">Make sure you have these<br/>before downloading.</h2>
+          <div style={{maxWidth:'700px',margin:'0 auto',display:'flex',flexDirection:'column',gap:'12px'}}>
+            <div className="feature-card" style={{flexDirection:'row',alignItems:'center',gap:'16px'}}>
+              <span style={{fontSize:'28px',flexShrink:0}}>🔑</span>
+              <div>
+                <div style={{fontWeight:'700',marginBottom:'4px'}}>Anthropic API Key — Required</div>
+                <div style={{fontSize:'13px',color:'#555',lineHeight:'1.6'}}>You need a free API key from Anthropic to power your AI assistant. Get one free at <a href="https://console.anthropic.com" target="_blank" style={{color:'#a855f7'}}>console.anthropic.com</a> — create account → API Keys → Create Key. Takes 2 minutes.</div>
+              </div>
+            </div>
+            <div className="feature-card" style={{flexDirection:'row',alignItems:'center',gap:'16px'}}>
+              <span style={{fontSize:'28px',flexShrink:0}}>🌐</span>
+              <div>
+                <div style={{fontWeight:'700',marginBottom:'4px'}}>Internet Connection — Required</div>
+                <div style={{fontSize:'13px',color:'#555'}}>The installer downloads everything it needs automatically. You just need to be online during setup.</div>
+              </div>
+            </div>
+            <div className="feature-card" style={{flexDirection:'row',alignItems:'center',gap:'16px'}}>
+              <span style={{fontSize:'28px',flexShrink:0}}>💻</span>
+              <div>
+                <div style={{fontWeight:'700',marginBottom:'4px'}}>Admin Access to Your Computer — Required</div>
+                <div style={{fontSize:'13px',color:'#555'}}>The installer needs permission to install software. Make sure you're logged in as an administrator.</div>
+              </div>
+            </div>
+            <div className="feature-card" style={{flexDirection:'row',alignItems:'center',gap:'16px'}}>
+              <span style={{fontSize:'28px',flexShrink:0}}>⏱️</span>
+              <div>
+                <div style={{fontWeight:'700',marginBottom:'4px'}}>15-20 Minutes — First time only</div>
+                <div style={{fontSize:'13px',color:'#555'}}>The installer sets up everything automatically. Don't close the window until it's done.</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* PRICING */}
         <section className="section" id="pricing">
           <div className="section-label">Pricing</div>
