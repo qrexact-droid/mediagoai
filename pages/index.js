@@ -353,7 +353,7 @@ export default function Home() {
             <div className="icon"><img src="/logo.png" alt="MediaGoAI" /></div>
             <span>MediaGoAI</span>
           </div>
-          <a href="#pricing" className="nav-cta">Get Started — FREE</a>
+          <a href="#pricing" className="nav-cta">Get Started — $297</a>
         </nav>
 
         {/* HERO */}
@@ -371,7 +371,7 @@ export default function Home() {
             but installing it requires technical knowledge most people don't have.
             MediaGoAI changes that. <strong>One click. Fully installed. Ready to work.</strong>
           </p>
-          <a href="#pricing" className="btn-primary">Get MediaGoAI — FREE</a>
+          <a href="#pricing" className="btn-primary">Get MediaGoAI — $297</a>
           <div className="price-note">One-time payment. <strong>No monthly fees.</strong> Instant download.</div>
         </section>
 
@@ -554,8 +554,8 @@ export default function Home() {
 
           <div className="pricing-card">
             <div className="pricing-badge">⚡ OpenClaw AI — Easy Install</div>
-            <div className="price"><sup></sup>FREE</div>
-            <div className="price-sub">Limited time — download now while it's free</div>
+            <div className="price"><sup>$</sup>297</div>
+            <div className="price-sub">One-time payment — no subscriptions ever</div>
 
             {/* Platform pills */}
             <p style={{fontSize:'13px',color:'#555',marginBottom:'24px'}}>Choose your platform below. Each license is valid for <strong style={{color:'#aaa'}}>one computer</strong>. Need both? Purchase both.</p>
@@ -585,14 +585,15 @@ export default function Home() {
             </div>
 
             <div style={{background:'rgba(255,255,255,0.03)',border:'1px solid rgba(255,255,255,0.08)',borderRadius:'14px',padding:'28px',textAlign:'center'}}>
-              <div style={{fontSize:'32px',marginBottom:'12px'}}>⬇️</div>
-              <div style={{fontSize:'18px',fontWeight:'700',marginBottom:'8px'}}>Download Now — It's Free</div>
+              <div style={{fontSize:'32px',marginBottom:'12px'}}>🚀</div>
+              <div style={{fontSize:'18px',fontWeight:'700',marginBottom:'8px'}}>Launching Soon</div>
               <div style={{fontSize:'14px',color:'#555',marginBottom:'20px',lineHeight:'1.7'}}>
-                Mac only. Double-click the installer — everything sets up automatically.
+                We're putting the finishing touches on MediaGoAI.<br/>
+                Join the waitlist to be notified at launch.
               </div>
-              <a href="/AIGO_Media_Setup_Mac.zip"
+              <a href="mailto:aigo.mediapro@gmail.com?subject=MediaGoAI Waitlist&body=Please notify me when MediaGoAI launches!"
                  className="btn-primary" style={{display:'block',width:'100%',textAlign:'center'}}>
-                🍎 Download for Mac — Free
+                Join the Waitlist →
               </a>
             </div>
             <p style={{fontSize:'13px',color:'#444',marginTop:'16px',textAlign:'center'}}>
